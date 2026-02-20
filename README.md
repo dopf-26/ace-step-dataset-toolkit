@@ -5,7 +5,7 @@ A comprehensive CLI toolkit for preparing audio datasets for the ACE-STEP music 
 ## Features
 
 - **Automated Audio Captioning**: Uses [ace-step-captioner](https://github.com/ace-step/ace-step-captioner) to generate descriptions for audio files
-- **Lyric Downloading**: Integrates [genius-api](https://github.com/genius-api) to automatically fetch lyrics for your tracks
+- **Lyric Downloading**: Integrates [genius-api](https://docs.genius.com/) to automatically fetch lyrics for your tracks
 - **Metadata Integration**: Seamlessly combines key and BPM data from [Mixxx](https://www.mixxx.org/) DJ software
 - **Smart Config Generation**: Automatically detects captions, lyrics, and BPM/key metadata, generating a training-ready configuration file
 - **Windows Optimized**: Built with Windows support and streamlined setup
@@ -16,7 +16,7 @@ A comprehensive CLI toolkit for preparing audio datasets for the ACE-STEP music 
 - **[uv](https://github.com/astral-sh/uv)** - Fast Python package manager and installer
 - **[Mixxx](https://www.mixxx.org/)** - For BPM and key detection (manual export)
 - **[ace-step-captioner](https://github.com/ace-step/ace-step-captioner)** - Audio captioning
-- **[genius-api](https://github.com/genius-api)** - Lyrics API access
+- **[genius-api](https://docs.genius.com/)** - Lyrics API access
 
 ## Installation
 
@@ -133,7 +133,7 @@ This project is part of the ACE-STEP ecosystem. See the LICENSE file for details
 
 - [ACE-STEP](https://github.com/ace-step)
 - [ace-step-captioner](https://github.com/ace-step/ace-step-captioner)
-- [Genius API](https://genius.com/api-clients)
+- [Genius API](https://docs.genius.com/)
 - [Mixxx Documentation](https://mixxx.org/manual/)
 - [uv Documentation](https://docs.astral.sh/uv/)
 - Thanks to mmoalem for further improving the code and adding mixxx to the mix!
