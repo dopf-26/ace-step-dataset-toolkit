@@ -86,6 +86,7 @@ The toolkit operates in three main steps:
 - **Captioning**: Audio files are automatically captioned using ace-step-captioner
 - **Lyrics**: Track information is used to download lyrics via genius-api
 - Both captions and lyrics are saved in the dataset audio subfolder
+- I cant stress this enough: MANUALLY EDIT your lyrics and make sure that they fit 100% to the audio!
 
 ### Step 3: Generate Config
 - The toolkit automatically detects all captions, lyrics, and metadata
