@@ -1,0 +1,32 @@
+[project]
+name = "acestep-captioner-cli"
+version = "0.1.0"
+description = "A CLI tool for captioning audio using ACE-Step/acestep-captioner"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "torchaudio==2.8.0",
+    "transformers @ git+https://github.com/huggingface/transformers@v4.51.3-Qwen2.5-Omni-preview",
+    "qwen-omni-utils[decord]",
+    "accelerate>=0.26.0",
+    "bitsandbytes>=0.41.0",
+    "huggingface_hub>=0.20.0",
+    "soundfile>=0.12.1",
+    "numba>=0.60.0",
+    "librosa>=0.10.2",
+    "flash-attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.4.10/flash_attn-2.8.2+cu128torch2.8-cp311-cp311-win_amd64.whl",
+    "triton-windows",
+    "lyricsgenius>=3.0.0",
+    "tinytag>=1.10.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
